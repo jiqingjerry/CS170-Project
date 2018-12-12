@@ -104,14 +104,14 @@ int jerry(vector< vector<float> > data) {
 			final_features.push_back(feature_to_add_at_this_level);
 			cout << endl;
 		} else {
-			cout << "(Warning, Accuracy has decreased! Continuing search in case of local maxima)" << endl;
+			cout << endl << "(Warning, Accuracy has decreased! Continuing search in case of local maxima)" << endl;
 		}
 		current_set_of_features.push_back(feature_to_add_at_this_level);
 		cout << "Feature set {";
 		for(int j = 0; j < current_set_of_features.size()-1; j++) {
 			cout << current_set_of_features.at(j) << ",";
 		}
-		cout << current_set_of_features.at(current_set_of_features.size()-1) << "} was best, accuracy is " << best_so_far_accuracy * 100 << "%" << endl;
+		cout << current_set_of_features.at(current_set_of_features.size()-1) << "} was best, accuracy is " << best_so_far_accuracy * 100 << "%\n\n";
 	}
 
 	cout << "Finished search!! The best feature subset is {";
@@ -150,7 +150,7 @@ int forward_search(vector< vector<float> > data) {
 			final_features.push_back(feature_to_add_at_this_level);
 			cout << endl;
 		} else {
-			cout << "(Warning, Accuracy has decreased! Continuing search in case of local maxima)" << endl;
+			cout << endl << "(Warning, Accuracy has decreased! Continuing search in case of local maxima)" << endl;
 		}
 
 		current_set_of_features.push_back(feature_to_add_at_this_level);
@@ -158,7 +158,7 @@ int forward_search(vector< vector<float> > data) {
 		for(int j = 0; j < current_set_of_features.size()-1; j++) {
 			cout << current_set_of_features.at(j) << ",";
 		}
-		cout << current_set_of_features.at(current_set_of_features.size()-1) << "} was best, accuracy is " << best_so_far_accuracy * 100 << "%" << endl;
+		cout << current_set_of_features.at(current_set_of_features.size()-1) << "} was best, accuracy is " << best_so_far_accuracy * 100 << "%\n\n";
 	}
 
 	cout << "Finished search!! The best feature subset is {";
@@ -214,14 +214,14 @@ int backward_search(vector< vector<float> > data) {
 			final_features = current_set_of_features;
 			cout << endl;
 		} else {
-			cout << "(Warning, Accuracy has decreased! Continuing search in case of local maxima)" << endl;
+			cout << endl << "(Warning, Accuracy has decreased! Continuing search in case of local maxima)" << endl;
 		}
 
 		cout << "Feature set {";
 		for(int j = 0; j < current_set_of_features.size()-1; j++) {
 			cout << current_set_of_features.at(j) << ",";
 		}
-		cout << current_set_of_features.at(current_set_of_features.size()-1) << "} was best, accuracy is " << best_so_far_accuracy * 100 << "%" << endl;
+		cout << current_set_of_features.at(current_set_of_features.size()-1) << "} was best, accuracy is " << best_so_far_accuracy * 100 << "%\n\n";
 	}
 
 	cout << "Finished search!! The best feature subset is {";
@@ -258,28 +258,28 @@ int main(int argc, char const *argv[]) {
 		data.push_back(temp);
 	}
 
-	vector< vector<float> > half;
+	vector< vector<float> > feat;
 
-	for(int i = 0; i < data.size()/2; i++) {
-		half.push_back(data.at(i));
-	}
 
 	for(int i = 1; i < data.at(0).size()-1; i++) {
 		all_features.push_back(i);
 	}
 	cout << "This dataset has " << data.at(0).size() - 1 << " features (not including the class attribute), with " << data.size() << " instances.\n\n";
+
+	cout << "Running nearest neighbor with all " << data.at(0).size() - 1 << " features, using \"leaving-one-out\" evaluation, I get an accuracy of " 
+		<< leave_one_out_cross_validation(data, all_features, -1) * 100 << "%\n\n";
 	if(choice == 1) {
-		clock_t c = clock();
+		// clock_t c = clock(); 
 		forward_search(data);
-		cout << (float)(clock() - c)/CLOCKS_PER_SEC << endl;
+		// cout << (float)(clock() - c)/CLOCKS_PER_SEC << endl;
 	} else if (choice == 2) {
-		clock_t c = clock();
+		// clock_t c = clock();
 		backward_search(data);
-		cout << (float)(clock() - c)/CLOCKS_PER_SEC << endl;
+		// cout << (float)(clock() - c)/CLOCKS_PER_SEC << endl;
 	} else {
-		clock_t c = clock();
+		// clock_t c = clock();
 		jerry(data);
-		cout << (float)(clock() - c)/CLOCKS_PER_SEC << endl;
+		// cout << (float)(clock() - c)/CLOCKS_PER_SEC << endl;
 	}
 	return 0;
 }

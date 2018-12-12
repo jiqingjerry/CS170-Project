@@ -1,0 +1,317 @@
+Welcome to Jerry Zhu's Feature Selection Algorithm.
+Type in the name of the file to test: small74.txt
+Type the number of the algorithm you want to run.
+	Forward Selection
+	Backward Elimination
+	Jerry's Special Algorithm
+1
+This dataset has 10 features (not including the class attribute), with 200 instances.
+
+Running nearest neighbor with all 10 features, using "leaving-one-out" evaluation, I get an accuracy of 73.5%
+
+Using feature(s) {1} accuracy is 70.5%
+Using feature(s) {2} accuracy is 65%
+Using feature(s) {3} accuracy is 71.5%
+Using feature(s) {4} accuracy is 70%
+Using feature(s) {5} accuracy is 72.5%
+Using feature(s) {6} accuracy is 67.5%
+Using feature(s) {7} accuracy is 71%
+Using feature(s) {8} accuracy is 84%
+Using feature(s) {9} accuracy is 67%
+Using feature(s) {10} accuracy is 65.5%
+
+Feature set {8} was best, accuracy is 84%
+
+Using feature(s) {8,1} accuracy is 79.5%
+Using feature(s) {8,2} accuracy is 86%
+Using feature(s) {8,3} accuracy is 94.5%
+Using feature(s) {8,4} accuracy is 79.5%
+Using feature(s) {8,5} accuracy is 80%
+Using feature(s) {8,6} accuracy is 78%
+Using feature(s) {8,7} accuracy is 84%
+Using feature(s) {8,9} accuracy is 84%
+Using feature(s) {8,10} accuracy is 84%
+
+Feature set {8,3} was best, accuracy is 94.5%
+
+Using feature(s) {8,3,1} accuracy is 94%
+Using feature(s) {8,3,2} accuracy is 94%
+Using feature(s) {8,3,4} accuracy is 89%
+Using feature(s) {8,3,5} accuracy is 91%
+Using feature(s) {8,3,6} accuracy is 92%
+Using feature(s) {8,3,7} accuracy is 91%
+Using feature(s) {8,3,9} accuracy is 91.5%
+Using feature(s) {8,3,10} accuracy is 92%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1} was best, accuracy is 94%
+
+Using feature(s) {8,3,1,2} accuracy is 91.5%
+Using feature(s) {8,3,1,4} accuracy is 85%
+Using feature(s) {8,3,1,5} accuracy is 87.5%
+Using feature(s) {8,3,1,6} accuracy is 90%
+Using feature(s) {8,3,1,7} accuracy is 83.5%
+Using feature(s) {8,3,1,9} accuracy is 89%
+Using feature(s) {8,3,1,10} accuracy is 90.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2} was best, accuracy is 91.5%
+
+Using feature(s) {8,3,1,2,4} accuracy is 79.5%
+Using feature(s) {8,3,1,2,5} accuracy is 83%
+Using feature(s) {8,3,1,2,6} accuracy is 83%
+Using feature(s) {8,3,1,2,7} accuracy is 81.5%
+Using feature(s) {8,3,1,2,9} accuracy is 83.5%
+Using feature(s) {8,3,1,2,10} accuracy is 83.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9} was best, accuracy is 83.5%
+
+Using feature(s) {8,3,1,2,9,4} accuracy is 78%
+Using feature(s) {8,3,1,2,9,5} accuracy is 78%
+Using feature(s) {8,3,1,2,9,6} accuracy is 80.5%
+Using feature(s) {8,3,1,2,9,7} accuracy is 80%
+Using feature(s) {8,3,1,2,9,10} accuracy is 83%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10} was best, accuracy is 83%
+
+Using feature(s) {8,3,1,2,9,10,4} accuracy is 77.5%
+Using feature(s) {8,3,1,2,9,10,5} accuracy is 78%
+Using feature(s) {8,3,1,2,9,10,6} accuracy is 71.5%
+Using feature(s) {8,3,1,2,9,10,7} accuracy is 76%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5} was best, accuracy is 78%
+
+Using feature(s) {8,3,1,2,9,10,5,4} accuracy is 76%
+Using feature(s) {8,3,1,2,9,10,5,6} accuracy is 73.5%
+Using feature(s) {8,3,1,2,9,10,5,7} accuracy is 77.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5,7} was best, accuracy is 77.5%
+
+Using feature(s) {8,3,1,2,9,10,5,7,4} accuracy is 74.5%
+Using feature(s) {8,3,1,2,9,10,5,7,6} accuracy is 75.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5,7,6} was best, accuracy is 75.5%
+
+Using feature(s) {8,3,1,2,9,10,5,7,6,4} accuracy is 72%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5,7,6,4} was best, accuracy is 72%
+
+Finished search!! The best feature subset is {8,3}, which has an accuracy of 94.5%
+
+
+
+
+---------------------------Backward elim------------------------------
+
+
+Welcome to Jerry Zhu's Feature Selection Algorithm.
+Type in the name of the file to test: small74.txt
+Type the number of the algorithm you want to run.
+	Forward Selection
+	Backward Elimination
+	Jerry's Special Algorithm
+2
+This dataset has 10 features (not including the class attribute), with 200 instances.
+
+Running nearest neighbor with all 10 features, using "leaving-one-out" evaluation, I get an accuracy of 73.5%
+
+Using feature(s) {2,3,4,5,6,7,8,9,10} accuracy is 76%
+Using feature(s) {1,3,4,5,6,7,8,9,10} accuracy is 72.5%
+Using feature(s) {1,2,4,5,6,7,8,9,10} accuracy is 74.5%
+Using feature(s) {1,2,3,5,6,7,8,9,10} accuracy is 75.5%
+Using feature(s) {1,2,3,4,6,7,8,9,10} accuracy is 74%
+Using feature(s) {1,2,3,4,5,7,8,9,10} accuracy is 74.5%
+Using feature(s) {1,2,3,4,5,6,8,9,10} accuracy is 71%
+Using feature(s) {1,2,3,4,5,6,7,9,10} accuracy is 70%
+Using feature(s) {1,2,3,4,5,6,7,8,10} accuracy is 74.5%
+Using feature(s) {1,2,3,4,5,6,7,8,9} accuracy is 73.5%
+
+Feature set {2,3,4,5,6,7,8,9,10} was best, accuracy is 76%
+
+Using feature(s) {3,4,5,6,7,8,9,10} accuracy is 72.5%
+Using feature(s) {2,4,5,6,7,8,9,10} accuracy is 73%
+Using feature(s) {2,3,5,6,7,8,9,10} accuracy is 79.5%
+Using feature(s) {2,3,4,6,7,8,9,10} accuracy is 69%
+Using feature(s) {2,3,4,5,7,8,9,10} accuracy is 71%
+Using feature(s) {2,3,4,5,6,8,9,10} accuracy is 76.5%
+Using feature(s) {2,3,4,5,6,7,9,10} accuracy is 74%
+Using feature(s) {2,3,4,5,6,7,8,10} accuracy is 76%
+Using feature(s) {2,3,4,5,6,7,8,9} accuracy is 75.5%
+
+Feature set {2,3,5,6,7,8,9,10} was best, accuracy is 79.5%
+
+Using feature(s) {3,5,6,7,8,9,10} accuracy is 74.5%
+Using feature(s) {2,5,6,7,8,9,10} accuracy is 75%
+Using feature(s) {2,3,6,7,8,9,10} accuracy is 77%
+Using feature(s) {2,3,5,7,8,9,10} accuracy is 80%
+Using feature(s) {2,3,5,6,8,9,10} accuracy is 78%
+Using feature(s) {2,3,5,6,7,9,10} accuracy is 71%
+Using feature(s) {2,3,5,6,7,8,10} accuracy is 80.5%
+Using feature(s) {2,3,5,6,7,8,9} accuracy is 75.5%
+
+Feature set {2,3,5,6,7,8,10} was best, accuracy is 80.5%
+
+Using feature(s) {3,5,6,7,8,10} accuracy is 77.5%
+Using feature(s) {2,5,6,7,8,10} accuracy is 80%
+Using feature(s) {2,3,6,7,8,10} accuracy is 76%
+Using feature(s) {2,3,5,7,8,10} accuracy is 79%
+Using feature(s) {2,3,5,6,8,10} accuracy is 83%
+Using feature(s) {2,3,5,6,7,10} accuracy is 75%
+Using feature(s) {2,3,5,6,7,8} accuracy is 82.5%
+
+Feature set {2,3,5,6,8,10} was best, accuracy is 83%
+
+Using feature(s) {3,5,6,8,10} accuracy is 79.5%
+Using feature(s) {2,5,6,8,10} accuracy is 77.5%
+Using feature(s) {2,3,6,8,10} accuracy is 78%
+Using feature(s) {2,3,5,8,10} accuracy is 80%
+Using feature(s) {2,3,5,6,10} accuracy is 73.5%
+Using feature(s) {2,3,5,6,8} accuracy is 83.5%
+
+Feature set {2,3,5,6,8} was best, accuracy is 83.5%
+
+Using feature(s) {3,5,6,8} accuracy is 83.5%
+Using feature(s) {2,5,6,8} accuracy is 80%
+Using feature(s) {2,3,6,8} accuracy is 89%
+Using feature(s) {2,3,5,8} accuracy is 89%
+Using feature(s) {2,3,5,6} accuracy is 70%
+
+Feature set {2,3,6,8} was best, accuracy is 89%
+
+Using feature(s) {3,6,8} accuracy is 92%
+Using feature(s) {2,6,8} accuracy is 81%
+Using feature(s) {2,3,8} accuracy is 94%
+Using feature(s) {2,3,6} accuracy is 75%
+
+Feature set {2,3,8} was best, accuracy is 94%
+
+Using feature(s) {3,8} accuracy is 94.5%
+Using feature(s) {2,8} accuracy is 86%
+Using feature(s) {2,3} accuracy is 71%
+
+Feature set {3,8} was best, accuracy is 94.5%
+
+Using feature(s) {8} accuracy is 84%
+Using feature(s) {3} accuracy is 71.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8} was best, accuracy is 84%
+
+Finished search!! The best feature subset is {3,8}, which has an accuracy of 94.5%
+
+
+
+---------------------------Special------------------------------
+
+
+Welcome to Jerry Zhu's Feature Selection Algorithm.
+Type in the name of the file to test: small74.txt
+Type the number of the algorithm you want to run.
+	Forward Selection
+	Backward Elimination
+	Jerry's Special Algorithm
+3
+This dataset has 10 features (not including the class attribute), with 200 instances.
+
+Running nearest neighbor with all 10 features, using "leaving-one-out" evaluation, I get an accuracy of 73.5%
+
+Using feature(s) {1} accuracy is 70.5%
+Using feature(s) {2} accuracy is 0%
+Using feature(s) {3} accuracy is 71.5%
+Using feature(s) {4} accuracy is 0%
+Using feature(s) {5} accuracy is 72.5%
+Using feature(s) {6} accuracy is 0%
+Using feature(s) {7} accuracy is 0%
+Using feature(s) {8} accuracy is 84%
+Using feature(s) {9} accuracy is 0%
+Using feature(s) {10} accuracy is 0%
+
+Feature set {8} was best, accuracy is 84%
+
+Using feature(s) {8,1} accuracy is 79.5%
+Using feature(s) {8,2} accuracy is 86%
+Using feature(s) {8,3} accuracy is 94.5%
+Using feature(s) {8,4} accuracy is 0%
+Using feature(s) {8,5} accuracy is 0%
+Using feature(s) {8,6} accuracy is 0%
+Using feature(s) {8,7} accuracy is 0%
+Using feature(s) {8,9} accuracy is 0%
+Using feature(s) {8,10} accuracy is 0%
+
+Feature set {8,3} was best, accuracy is 94.5%
+
+Using feature(s) {8,3,1} accuracy is 94%
+Using feature(s) {8,3,2} accuracy is 94%
+Using feature(s) {8,3,4} accuracy is 0%
+Using feature(s) {8,3,5} accuracy is 0%
+Using feature(s) {8,3,6} accuracy is 0%
+Using feature(s) {8,3,7} accuracy is 0%
+Using feature(s) {8,3,9} accuracy is 0%
+Using feature(s) {8,3,10} accuracy is 0%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1} was best, accuracy is 94%
+
+Using feature(s) {8,3,1,2} accuracy is 91.5%
+Using feature(s) {8,3,1,4} accuracy is 0%
+Using feature(s) {8,3,1,5} accuracy is 0%
+Using feature(s) {8,3,1,6} accuracy is 0%
+Using feature(s) {8,3,1,7} accuracy is 0%
+Using feature(s) {8,3,1,9} accuracy is 0%
+Using feature(s) {8,3,1,10} accuracy is 0%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2} was best, accuracy is 91.5%
+
+Using feature(s) {8,3,1,2,4} accuracy is 79.5%
+Using feature(s) {8,3,1,2,5} accuracy is 83%
+Using feature(s) {8,3,1,2,6} accuracy is 83%
+Using feature(s) {8,3,1,2,7} accuracy is 0%
+Using feature(s) {8,3,1,2,9} accuracy is 83.5%
+Using feature(s) {8,3,1,2,10} accuracy is 83.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9} was best, accuracy is 83.5%
+
+Using feature(s) {8,3,1,2,9,4} accuracy is 78%
+Using feature(s) {8,3,1,2,9,5} accuracy is 78%
+Using feature(s) {8,3,1,2,9,6} accuracy is 80.5%
+Using feature(s) {8,3,1,2,9,7} accuracy is 0%
+Using feature(s) {8,3,1,2,9,10} accuracy is 83%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10} was best, accuracy is 83%
+
+Using feature(s) {8,3,1,2,9,10,4} accuracy is 77.5%
+Using feature(s) {8,3,1,2,9,10,5} accuracy is 78%
+Using feature(s) {8,3,1,2,9,10,6} accuracy is 0%
+Using feature(s) {8,3,1,2,9,10,7} accuracy is 0%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5} was best, accuracy is 78%
+
+Using feature(s) {8,3,1,2,9,10,5,4} accuracy is 76%
+Using feature(s) {8,3,1,2,9,10,5,6} accuracy is 0%
+Using feature(s) {8,3,1,2,9,10,5,7} accuracy is 77.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5,7} was best, accuracy is 77.5%
+
+Using feature(s) {8,3,1,2,9,10,5,7,4} accuracy is 74.5%
+Using feature(s) {8,3,1,2,9,10,5,7,6} accuracy is 75.5%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5,7,6} was best, accuracy is 75.5%
+
+Using feature(s) {8,3,1,2,9,10,5,7,6,4} accuracy is 72%
+
+(Warning, Accuracy has decreased! Continuing search in case of local maxima)
+Feature set {8,3,1,2,9,10,5,7,6,4} was best, accuracy is 72%
+
+Finished search!! The best feature subset is {8,3}, which has an accuracy of 94.5%
