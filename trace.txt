@@ -205,6 +205,15 @@ Feature set {8} was best, accuracy is 84%
 
 Finished search!! The best feature subset is {3,8}, which has an accuracy of 94.5%
 
+Now I will do some resampling and make four copies of dataset where I randomly delete 5% of the data
+Subset 1 has 10 features (not including the class attribute), with 190 instances.
+Subset 2 has 10 features (not including the class attribute), with 190 instances.
+Subset 3 has 10 features (not including the class attribute), with 190 instances.
+Subset 4 has 10 features (not including the class attribute), with 190 instances.
+The best feature subset for Subset 1 is {8,3,1}, which has an accuracy of 93.6842%
+The best feature subset for Subset 2 is {8,3}, which has an accuracy of 94.2105%
+The best feature subset for Subset 3 is {8,3,2}, which has an accuracy of 94.2105%
+The best feature subset for Subset 4 is {8,3}, which has an accuracy of 94.7368%
 
 
 ---------------------------Special------------------------------
